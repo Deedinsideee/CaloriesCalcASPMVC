@@ -1,0 +1,25 @@
+@model Food
+@{
+    Layout = "_Layout";
+}
+
+
+<div class="u-align-center u-container-style u-products-item u-repeater-item">
+ <div class="u-container-layout u-similar-container u-valign-bottom-sm u-container-layout-5">
+    <img alt=""  src="@Model.Image" />
+   <div class="u-align-center u-container-style u-grey-10 u-group u-group-3">
+     <div class="u-container-layout u-valign-middle u-container-layout-6">
+          <h4 class="u-product-control u-text u-text-default u-text-7">
+                      <a class="u-product-title-link" href="#">@Model.Name</a>
+          </h4>
+       <div class="u-product-control u-product-price u-product-price-3">
+       <div class="u-price-wrapper u-spacing-10">
+        <div class="u-hide-price u-old-price">$12</div>
+         <div class="u-price u-text-palette-2-base" style="font-size: 1.25rem; font-weight: 700;">каллорийность = @Model.Calories</div>
+         </div>
+       </div>
+     </div>
+   </div>
+  <div class="u-product-control u-product-desc u-text u-text-8">Белки: @Model.Belki   Жиры: @Model.Jiri   Углеводы: @Model.Uglevodi @Model.Image</div>
+ </div>
+</div>
